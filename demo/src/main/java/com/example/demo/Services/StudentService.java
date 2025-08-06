@@ -34,7 +34,8 @@ public class StudentService {
 	}
 	
 	public boolean deleteStudent(Long id) {
-		Student student = repository.findStudentById(id).get();
+		Student student = repository.findStudentById(id)
+				.orElseThrow(() -> new StudentNotFoundException("Student not Found: " + id));
 		if(student.equals(null)) {
 			throw new StudentNotFoundException("Student not found " + id);
 		} else {
@@ -44,12 +45,12 @@ public class StudentService {
 	}
 	
 	public Student getStudent(Long id) {
-		return repository.findStudentById(id).get();
+		return repository.findStudentById(id)
+				.orElseThrow(() -> new StudentNotFoundException("Student not found: " + id));
 	}
 	
 	public Student updateStudent(Long id, Student student) {
 		Student students = repository.findStudentById(id).get();
-		
 		if(!student.getEmail().equals(students.getEmail())) {
 			students.setEmail(student.getEmail());
 			students.setDob(student.getDob());

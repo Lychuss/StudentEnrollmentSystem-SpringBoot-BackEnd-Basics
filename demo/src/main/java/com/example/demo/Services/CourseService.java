@@ -35,7 +35,8 @@ public class CourseService {
 	}
 	
 	public boolean deleteCourse(Long id) {
-		Course course = repository.findCourseById(id).get();
+		Course course = repository.findCourseById(id)
+				.orElseThrow(() -> new CourseNotFoundException("Course not found:" + id));
 		if(course.equals(null)) {
 			throw new CourseNotFoundException("Course not found " + id);
 		} else {

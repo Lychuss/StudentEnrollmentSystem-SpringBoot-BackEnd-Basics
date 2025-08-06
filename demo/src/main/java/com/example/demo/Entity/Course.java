@@ -38,4 +38,9 @@ public class Course {
 
     @OneToMany(mappedBy = "course") 
     private List<Enrollment> enrollees = new ArrayList<>();
+    
+    public Course(String title, String description) {
+    	this.title = title;
+    	this.description = description;
+    }
 }

@@ -1,3 +1,4 @@
+===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\pom.xml ===== 
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -88,6 +89,142 @@
     </build>
 
 </project>
+===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\spring_boot.txt ===== 
+===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\pom.xml ===== 
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.5.4</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <groupId>com.example</groupId>
+    <artifactId>demo</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>demo</name>
+    <description>Demo project for Spring Boot</description>
+
+    <properties>
+        <java.version>21</java.version>
+    </properties>
+
+    <dependencies>
+        <!-- Spring Boot starters -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- MySQL Driver -->
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!-- Lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- Spring Boot DevTools -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- ✅ Spring Boot Test (add this to fix tests) -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <annotationProcessorPaths>
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </path>
+                    </annotationProcessorPaths>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
+===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\spring_boot.txt ===== 
+===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\pom.xml ===== 
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <gro===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\HELP.md ===== 
+# Getting Started
+
+### Reference Documentation
+For further reference, please consider the following sections:
+
+* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
+* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/3.5.4/maven-plugin)
+* [Create an OCI image](https://docs.spring.io/spring-boot/3.5.4/maven-plugin/build-image.html)
+* [Spring Web](https://docs.spring.io/spring-boot/3.5.4/reference/web/servlet.html)
+* [Spring Data JPA](https://docs.spring.io/spring-boot/3.5.4/reference/data/sql.html#data.sql.jpa-and-spring-data)
+* [Validation](https://docs.spring.io/spring-boot/3.5.4/reference/io/validation.html)
+* [Spring Boot DevTools](https://docs.spring.io/spring-boot/3.5.4/reference/using/devtools.html)
+* [Spring Security](https://docs.spring.io/spring-boot/3.5.4/reference/web/spring-security.html)
+
+### Guides
+The following guides illustrate how to use some features concretely:
+
+* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
+* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
+* [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
+* [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
+* [Accessing data with MySQL](https://spring.io/guides/gs/accessing-data-mysql/)
+* [Validation](https://spring.io/guides/gs/validating-form-input/)
+* [Securing a Web Application](https://spring.io/guides/gs/securing-web/)
+* [Spring Boot and OAuth2](https://spring.io/guides/tutorials/spring-boot-oauth2/)
+* [Authenticating a User with LDAP](https://spring.io/guides/gs/authenticating-ldap/)
+
+### Maven Parent overrides
+
+Due to Maven's design, elements are inherited from the parent POM to the project POM.
+While most of the inheritance is fine, it also inherits unwanted elements like `<license>` and `<developers>` from the parent.
+To prevent this, the project POM contains empty overrides for these elements.
+If you manually switch to a different parent and actually want the inheritance, you need to remove those overrides.
+
+===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\.mvn\wrapper\maven-wrapper.properties ===== 
 # Licensed to the Apache Software Foundation (ASF) under one
 # or more contributor license agreements.  See the NOTICE file
 # distributed with this work for additional information
@@ -107,6 +244,7 @@
 wrapperVersion=3.3.2
 distributionType=only-script
 distributionUrl=https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.9.11/apache-maven-3.9.11-bin.zip
+===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\src\main\java\com\example\demo\DemoApplication.java ===== 
 package com.example.demo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -119,6 +257,40 @@ public class DemoApplication {
 	}
 
 }
+===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\src\main\java\com\example\demo\Configuration\CommandLiner.java ===== 
+package com.example.demo.Configuration;
+
+import java.time.LocalDate;
+import java.time.Month;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.example.demo.Entity.Course;
+import com.example.demo.Entity.Student;
+import com.example.demo.Repository.CourseRepository;
+import com.example.demo.Repository.StudentRepository;
+
+@Configuration
+public class CommandLiner {
+
+	@Bean
+	CommandLineRunner commandRunner(StudentRepository repository) {
+		return args -> {
+			Student student = new Student("Carlo", "carlojames@gmail.com", LocalDate.of(2005, Month.JULY, 19));
+		};
+	}
+	
+	@Bean
+	CommandLineRunner commandRunner(CourseRepository repository) {
+		return args -> {
+			Course course = new Course("Java Programmer", "A course that can master OOP");
+			Course course1 = new Course("AI Programmer", "A course that can master AI");
+		};
+	}
+}
+===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\src\main\java\com\example\demo\Controller\CourseController.java ===== 
 
 package com.example.demo.Controller;
 
@@ -162,6 +334,7 @@ public class CourseController {
 		return service.deleteCourse(id);
 	}
 }
+===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\src\main\java\com\example\demo\Controller\EnrollmentController.java ===== 
 package com.example.demo.Controller;
 
 import java.util.List;
@@ -211,6 +384,7 @@ public class EnrollmentController {
 	}
 	
 }
+===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\src\main\java\com\example\demo\Controller\StudentController.java ===== 
 package com.example.demo.Controller;
 
 import java.util.List;
@@ -266,6 +440,7 @@ public class StudentController {
 		return ResponseEntity.ok(students);
 	}
 }
+===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\src\main\java\com\example\demo\Entity\Course.java ===== 
 package com.example.demo.Entity;
 
 import java.util.ArrayList;
@@ -292,8 +467,6 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Getter
-@Setter
 public class Course {
 
     @Id
@@ -308,7 +481,13 @@ public class Course {
 
     @OneToMany(mappedBy = "course") 
     private List<Enrollment> enrollees = new ArrayList<>();
+    
+    public Course(String title, String description) {
+    	this.title = title;
+    	this.description = description;
+    }
 }
+===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\src\main\java\com\example\demo\Entity\Enrollment.java ===== 
 package com.example.demo.Entity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -348,6 +527,7 @@ public class Enrollment {
 	}
 	
 }
+===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\src\main\java\com\example\demo\Entity\Student.java ===== 
 package com.example.demo.Entity;
 
 import java.time.LocalDate;
@@ -405,8 +585,15 @@ public class Student {
 	public int getAge() {
 		return Period.between(dob, LocalDate.now()).getYears();
 	}
+	
+    public Student(String name, String email, LocalDate dob) {
+        this.name = name;
+        this.email = email;
+        this.dob = dob;
+    }
 }
 
+===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\src\main\java\com\example\demo\ErrorHandler\CourseNotFoundException.java ===== 
 package com.example.demo.ErrorHandler;
 
 public class CourseNotFoundException extends RuntimeException{
@@ -415,6 +602,7 @@ public class CourseNotFoundException extends RuntimeException{
 		super(message);
 	}
 }
+===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\src\main\java\com\example\demo\ErrorHandler\GlobalExceptionHandler.java ===== 
 package com.example.demo.ErrorHandler;
 
 import java.util.HashMap;
@@ -447,6 +635,7 @@ public class GlobalExceptionHandler {
 		return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
 	}
 }
+===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\src\main\java\com\example\demo\ErrorHandler\StudentNotFoundException.java ===== 
 package com.example.demo.ErrorHandler;
 
 public class StudentNotFoundException extends RuntimeException{
@@ -455,6 +644,7 @@ public class StudentNotFoundException extends RuntimeException{
 		super(message);
 	}
 }
+===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\src\main\java\com\example\demo\Repository\CourseRepository.java ===== 
 package com.example.demo.Repository;
 
 import java.util.Optional;
@@ -474,6 +664,7 @@ public interface CourseRepository extends JpaRepository<Course, Long>{
 	@Query("SELECT s FROM Course s WHERE s.id = ?1")
 	Optional<Course> findCourseById (Long id);
 }
+===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\src\main\java\com\example\demo\Repository\EnrollmentRepository.java ===== 
 package com.example.demo.Repository;
 
 import java.util.List;
@@ -499,6 +690,7 @@ public interface EnrollmentRepository extends JpaRepository<Enrollment, Long>{
 	@Query("SELECT s.student FROM Enrollment s WHERE s.course.id = ?1")
 	List<Student> findCourseById (Long id);
 }
+===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\src\main\java\com\example\demo\Repository\StudentRepository.java ===== 
 package com.example.demo.Repository;
 
 import java.util.Optional;
@@ -518,6 +710,7 @@ public interface StudentRepository extends JpaRepository<Student, Long>{
 	@Query("SELECT s FROM Student s WHERE s.email = ?1")
 	Optional<Student> findStudentByEmail (String email);
 }
+===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\src\main\java\com\example\demo\Services\CourseService.java ===== 
 package com.example.demo.Services;
 
 import java.util.List;
@@ -565,6 +758,7 @@ public class CourseService {
 		
 	}
 }
+===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\src\main\java\com\example\demo\Services\EnrollmentService.java ===== 
 package com.example.demo.Services;
 
 import java.util.ArrayList;
@@ -623,6 +817,7 @@ public class EnrollmentService {
 		  return false;
 	}
 }
+===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\src\main\java\com\example\demo\Services\StudentService.java ===== 
 package com.example.demo.Services;
 
 import java.util.List;
@@ -684,15 +879,17 @@ public class StudentService {
 		return repository.save(students);
 	}
 }
+===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\src\main\resources\application.properties ===== 
 spring.datasource.url=jdbc:mysql://localhost:3306/enrollmentsystemupgrade?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
 spring.datasource.username=root
-spring.datasource.password=Tokitoclaude0907@
+spring.datasource.password=YOUR_PASSWORD_HERE
 
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
 spring.jpa.properties.hibernate.format_sql=true
 
+===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\src\test\java\com\example\demo\DemoApplicationTests.java ===== 
 package com.example.demo;
 
 import org.junit.jupiter.api.Test;
@@ -706,22 +903,17 @@ class DemoApplicationTests {
 	}
 
 }
+===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\target\classes\application.properties ===== 
 spring.datasource.url=jdbc:mysql://localhost:3306/enrollmentsystemupgrade?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
 spring.datasource.username=root
-spring.datasource.password=Tokitoclaude0907@
+spring.datasource.password=YOUR_PASSWORD_HERE
 
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
 spring.jpa.properties.hibernate.format_sql=true
 
-#Generated by Maven Integration for Eclipse
-#Wed Aug 06 11:25:55 GMT+08:00 2025
-artifactId=demo
-groupId=com.example
-m2e.projectLocation=C\:\\Users\\Test\\eclipse-workspace\\SpringBoot _EnrollmentSystem\\demo
-m2e.projectName=SpringBoot_EnrollmentSystem
-version=0.0.1-SNAPSHOT
+===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\target\classes\META-INF\maven\com.example\demo\pom.xml ===== 
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -812,6 +1004,15 @@ version=0.0.1-SNAPSHOT
     </build>
 
 </project>
+===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\target\classes\META-INF\maven\com.example\demo\pom.properties ===== 
+#Generated by Maven Integration for Eclipse
+#Wed Aug 06 17:38:13 GMT+08:00 2025
+artifactId=demo
+groupId=com.example
+m2e.projectLocation=C\:\\Users\\Test\\eclipse-workspace\\SpringBoot _EnrollmentSystem\\demo
+m2e.projectName=SpringBoot_EnrollmentSystem
+version=0.0.1-SNAPSHOT
+===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\target\surefire-reports\TEST-com.example.demo.DemoApplicationTests.xml ===== 
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.example.demo.DemoApplicationTests" time="7.157" tests="1" errors="1" skipped="0" failures="0">
   <properties>
@@ -2531,4 +2732,73 @@ Unconditional classes:
 
 ]]></system-err>
   </testcase>
-</testsuite>
+</testsuite>===== C:\Users\Test\eclipse-workspace\SpringBoot _EnrollmentSystem\demo\target\surefire-reports\com.example.demo.DemoApplicationTests.txt ===== 
+-------------------------------------------------------------------------------
+Test set: com.example.demo.DemoApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 7.157 s <<< FAILURE! -- in com.example.demo.DemoApplicationTests
+com.example.demo.DemoApplicationTests.contextLoads -- Time elapsed: 0.022 s <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@14239223 testClass = com.example.demo.DemoApplicationTests, locations = [], classes = [com.example.demo.DemoApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@13d73f29, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2fb0623e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4ee203eb, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@2ad48653, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@45efd90f, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@776a6d9b, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@35edabda], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:139)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:159)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Collection 'com.example.demo.Entity.Course.enrollees' is 'mappedBy' a property named 'courses' which does not exist in the target entity 'com.example.demo.Entity.Enrollment'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:144)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:563)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:144)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:110)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+	... 19 more
+Caused by: org.hibernate.AnnotationException: Collection 'com.example.demo.Entity.Course.enrollees' is 'mappedBy' a property named 'courses' which does not exist in the target entity 'com.example.demo.Entity.Enrollment'
+	at org.hibernate.boot.model.internal.CollectionBinder.isReversePropertyInJoin(CollectionBinder.java:1638)
+	at org.hibernate.boot.model.internal.CollectionBinder.noAssociationTable(CollectionBinder.java:1652)
+	at org.hibernate.boot.model.internal.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:1613)
+	at org.hibernate.boot.model.internal.CollectionBinder$1.secondPass(CollectionBinder.java:1604)
+	at org.hibernate.boot.model.internal.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1842)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1800)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:334)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
+	... 39 more
+
